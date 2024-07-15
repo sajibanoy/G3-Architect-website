@@ -67,7 +67,18 @@
     font-weight: 700;
     font-size: 4rem;
   }
-  /* .banner-img{
+ .banner-img{
+    display: flex;
     justify-content: center;
-    align-items: center;
-  } */
+    width: 100%;
+  }
+  @media screen and (max-width: 576px) {
+    .nav-links,
+    .banner-img,
+    .navbar {
+      flex-direction: column;
+    }
+    .nav-links{
+      gap: 20px;
+    }
+  }
